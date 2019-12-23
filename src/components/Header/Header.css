@@ -1,0 +1,6 @@
+.App-header__title {
+    align-items: center;
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+}

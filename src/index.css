@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Prevent body scrolling and defer to GiphyGallery */
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: #eee;
+}
+
+/* Colors */
+:root {
+  --purple: #8093FF;
+  --dark-purple: rgb(102, 116, 192);
+  --red: #FF502C;
+  --orange: #FF9472;
+  --pink: #FF91FF;
+}
+
+/* Default */
+img {
+  height: auto;
+  width: 100%;
+}
+
+/* Global Utils */
+.text-center {
+  text-align: center;
+}
+
+/* rough vertical rhythm */
+[class*="vertical-rhythm"] > * {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+[class*="vertical-rhythm"] > * + * {
+  margin-top: 1rem;
+}
+
+[class*="vertical-rhythm--xs"] > * + * {
+  margin-top: .25rem;
+}
+
+[class*="vertical-rhythm--s"] > * + * {
+  margin-top: .5rem;
+}
+
+[class*="vertical-rhythm--xl"] > * + * {
+  margin-top: 2rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+}
